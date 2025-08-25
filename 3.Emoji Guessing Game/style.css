@@ -1,0 +1,53 @@
+
+
+body{
+    background:linear-gradient(to left,lightpink,lightblue);
+    text-align: center;
+}
+
+.parent-div{
+    display: inline-block;
+    margin:auto;
+    margin-top: 100px;
+    padding:20px;
+    background-color: white;
+    width:500px;
+    height:400px;
+}
+
+.parent-div input{
+    border: 2px solid rgb(191, 157, 223);
+    border-radius: 5px;
+    padding:5px;
+    margin:20px;
+}
+
+.parent-div #emoji-display{
+    
+    margin:auto;
+
+    font-size: 70px;
+}
+
+.parent-div #answer{
+    margin:20px;
+}
+
+.parent-div #score{
+    margin:20px;
+}
+
+.parent-div #timer{
+    margin:20px;
+}
+
+.parent-div #btn{
+    padding:10px 20px;
+    border-radius:5px;
+    background-color: lavenderblush;
+    border:2px solid rgb(209, 209, 242);
+}
+
+#btn:hover{
+    background-color: lightgoldenrodyellow;
+}
