@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(to right,#ADEED9,#DB8DD0);
+}
+
+#parent-div{
+    margin:auto;
+    margin-top:70px;
+    background-color:rgb(240, 240, 232);
+    height:400px;
+    width:500px;
+    padding:30px;
+    border-radius:10px;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#input{
+    padding:5px;
+    margin:10px;
+    border:2px solid #8686AC;
+    border-radius:5px;
+}
+
+button{
+    padding:5px 10px;
+    border:2px solid #8686AC;
+    border-radius:5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
