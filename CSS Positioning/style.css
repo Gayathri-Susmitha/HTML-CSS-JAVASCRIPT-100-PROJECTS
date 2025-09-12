@@ -1,188 +1,174 @@
-*{
-    padding:0px;
-    margin:0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-
-}
-
-header{
-    background-color: rgb(2, 2, 55);
-    color: white;
-    padding:20px;
-    text-align: center;
-    position:fixed;
-    top:0;
-    width:100%;
-    
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-main{
-    margin-top:100px;
+header {
+  background-color: rgb(2, 2, 55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.heading .heading1{
-    color:white;
-    margin:20px;
-    font-size: 20px;
-    font-weight: bold;
-    position:sticky;
-    top:100px;
-}
-.heading .subheading1{
-    color:white;
-    margin:20px;
-    font-size: 20px;
-    font-weight: bold;
-    position:sticky;
-    top:140px;
+main {
+  margin-top: 100px;
 }
 
-.main-player{
-    width:100vw;
-   
-    top:0;
+.heading .heading1 {
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  top: 100px;
+}
+.heading .subheading1 {
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  top: 140px;
 }
 
-.player{
-    display:inline-block;
-    border:5px solid white;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    margin:50px;
-    width:250px;
-    height:200px;
-
+.main-player {
+  width: 100vw;
+  top: 0;
 }
 
-.player-photo{
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
+.player {
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin: 50px;
+  width: 250px;
+  height: 200px;
 }
 
-.player-text{
- position: absolute;
- text-align: center;
- color:white;
-    top:80%;
-    left:30%;
-    
-    
+.player-photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.player-name,.player-role{
-    font-size: 16px;
-    font-weight: bold;
-
+.player-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 80%;
+  left: 30%;
 }
 
-.subheading2{
-    color:white;
-     font-size: 20px;
-    font-weight: bold;
-    margin-bottom:40px;
+.player-name,
+.player-role {
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.scrollable-card{
-    height:300px;
-    width:450px;
-    background-color: white;
-    border-radius: 20px;
-    text-align: center;
-    margin: auto;
-    position: relative;
-    background-color: white;
+.subheading2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
 
+.scrollable-card {
+  height: 300px;
+  width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  background-color: white;
 }
 
 .star-player {
-    color: black;
-    padding:10px;
-    position: sticky;
-    top:5px;
+  color: black;
+  padding: 10px;
+  position: sticky;
+  top: 5px;
 }
 
-.player-card-container{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: relative;
-    background-color: white;
-     border-radius: 20px;
-     width:80%;
-     height:80%;
-     margin:auto;
-     
-
+.player-card-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  width: 80%;
+  height: 80%;
+  margin: auto;
 }
 
-.player-card{
-    width:100%;
-    height: 100%;
-    margin:auto;
-    margin-bottom:40px;
-    
+.player-card {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
-.player-card img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    margin: auto;
+.player-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: auto;
 }
 
-.player-card p{
-    padding: 10px;
-    font-weight: 700;
+.player-card p {
+  padding: 10px;
+  font-weight: 700;
 }
 
-.table-container{
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+.table-container {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.ranking-table{
-    margin: auto;
-    width:80%;
-    margin-top: 40px;
-    border-collapse: collapse;
+.ranking-table {
+  margin: auto;
+  width: 80%;
+  margin-top: 40px;
+  border-collapse: collapse;
 }
-.ranking-table tbody td{
-    background-color: white;
-    padding:10px;
-     border: 3px solid #dee2e6;
-}
-
-.ranking-table thead th{
-    background-color: rgb(2, 2, 55);
-    color:white;
-    padding:10px;
-     
+.ranking-table tbody td {
+  background-color: white;
+  padding: 10px;
+  border: 3px solid #dee2e6;
 }
 
-footer{
-    background-color:  rgb(2, 2, 55);
-    color:white;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 40px;
-    padding:20px;
+.ranking-table thead th {
+  background-color: rgb(2, 2, 55);
+  color: white;
+  padding: 10px;
 }
 
-footer p,h2{
-   padding:10px;
+footer {
+  background-color: rgb(2, 2, 55);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
 }
 
-
-
-
+footer p,
+h2 {
+  padding: 10px;
+}
