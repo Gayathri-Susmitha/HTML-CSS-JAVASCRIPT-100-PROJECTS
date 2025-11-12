@@ -1,0 +1,204 @@
+/* Light Theme - "Ocean Mist" Blue-Green Gradient */
+:root {
+    --primary-color: #f0f8ff;       /* AliceBlue, a very light, neutral blue background */
+    --secondary-gradient: linear-gradient(135deg, #a8e0ff 0%, #a2f0c2 100%); /* Soft Blue to Mint Green */
+    --text-color: #0c4a6e;          /* Dark, rich blue for high-contrast text */
+    --text-color-light: #4b7c9c;     /* Softer blue for secondary text */
+    --button-color: #059669;        /* A deep, vibrant green for buttons */
+    --button-text-color: #ffffff;
+    --accent-color: rgba(255, 255, 255, 0.7); /* A semi-transparent white for selected items */
+    --border-color: #cceefc;
+    --shadow-color: rgba(75, 124, 156, 0.1); /* Soft shadow color */
+}
+
+/* Dark Theme - Shades of Grey */
+[data-theme="dark"] {
+    --primary-color: #1a202c;
+    --secondary-gradient: #2d3748; /* Solid color for dark mode */
+    --text-color: #e2e8f0;
+    --text-color-light: #a0aec0;
+    --button-color: #9b59b6;
+    --button-text-color: #ffffff;
+    --accent-color: #4a5568;
+    --border-color: #4a5568;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 20px 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 20px;
+}
+
+.all-songs-section, .song-card-section, .playlist-section {
+    background: var(--secondary-gradient);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.song, #playlist-list li {
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-left: 5px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, border-left 0.2s;
+}
+
+.song:hover, #playlist-list li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.song.selected {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-left: 5px solid var(--button-color);
+    font-weight: bold;
+}
+
+#song-card {
+    text-align: center;
+}
+
+#song-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+#artist-name {
+    color: var(--text-color-light);
+    margin-top: -10px;
+}
+
+audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.song-controls button {
+    font-size: 1.2rem;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#current-playlist-song-list .song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#current-playlist-song-list button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    background-color: #e53e3e;
+}
+
+/* Theme Toggle Switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+}
+.theme-switch input {
+  display:none;
+}
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+}
+input:checked + .slider {
+  background-color: var(--button-color);
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head><body>
+    <div class="container">
+        <header class="header">
+            <h1>Music Player</h1>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="toggle-theme">
+                    <input type="checkbox" id="toggle-theme" />
+                    <div class="slider round"></div>
+                </label>
+                <span id="theme-label">Dark</span>
+            </div>
+        </header>
+        <main class="main">
+            <section class="all-songs-section">
+                <h2>All Songs</h2>
+                <div class="filter-search">
+                    <select id="genre-filter">
+                        <option value="all">All Genres</option>
+                        <option value="Hip Hop">Hip Hop</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Rock">Rock</option>
+                    </select>
+                    <input type="text" id="song-search" placeholder="Search for a song...">
+                </div>
+                <div id="all-songs-list"></div>
+            </section>
+            <section class="song-card-section">
+                <div id="song-card">
+                    <img src="https://via.placeholder.com/300" alt="Album Art" id="song-img">
+                    <h3 id="song-name">Select a Song</h3>
+                    <p id="artist-name">Artist</p>
+                    <audio id="audio" controls></audio>
+                    <div class="song-controls">
+                        <button id="prev-btn">⇐</button>
+                        <button id="next-btn">⇒</button>
+                    </div>
+                    <button id="add-to-playlist-btn">Add to Playlist</button>
+                </div>
+            </section>
+            <section class="playlist-section">
+                <h2>Playlists</h2>
+                <div class="playlist-controls">
+                    <input type="text" id="new-playlist-name" placeholder="New Playlist Name">
+                    <button id="create-playlist-btn">Create Playlist</button>
+                </div>
+                <div class="filter-search">
+                    <input type="text" id="playlist-search" placeholder="Search for a playlist...">
+                </div>
+                <div id="playlists">
+                    <h3>All Playlists</h3>
+                    <ul id="playlist-list"></ul>
+                </div>
+                <div id="current-playlist-songs">
+                    <h3>Current Playlist</h3>
+                    <ul id="current-playlist-song-list"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
